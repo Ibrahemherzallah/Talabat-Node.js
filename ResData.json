@@ -1,0 +1,109 @@
+[
+    {
+        "name": "الطازج",
+        "_id": 1 ,
+        "img" : "/images/res/tazaj.jpg"
+    },
+    {
+        "name": "فرايد تشكن",
+        "_id": 2 ,
+        "img" : "/images/res/arabFride.png"
+
+    },
+    {
+        "name": "هني هني",
+        "_id": 3 , 
+        "img" : "/images/res/huny.png"
+
+    },
+    {
+        "name": "kfc",
+        "_id": 4 ,
+        "img" : "/images/res/kfc.jpg"
+
+    },
+    {
+        "name": "المجد",
+        "_id": 5 ,
+        "img" : "/images/res/sheefMjd.jpg"
+
+    },
+    {
+        "name": "شورمان",
+        "_id": 6 ,
+        "img" : "/images/res/shawarman.jpg"
+
+    },
+    {
+        "name": "دمشق",
+        "_id": 7 ,
+        "img" : "/images/res/demashq.jpg"
+
+    },
+    {
+        "name": "هب الريح",
+        "_id": 8 ,
+        "img" : "/images/res/habAlreeh.jpg"
+
+    },
+    {
+        "name": "الاقصى",
+        "_id": 9 ,
+        "img" : "/images/res/alaqsa.jpg"
+
+    },
+    {
+        "name": "البستان",
+        "_id": 10 ,
+        "img" : "/images/res/albustan.jpg"
+
+    },
+    {
+        "name": "شاورما حمزة",
+        "_id": 11 ,
+        "img" : "/images/res/hamza.jpg"
+
+    },
+    {
+        "name": "الحثناوي",
+        "_id": 12 ,
+        "img" : "/images/res/alhethnawe.jpg"
+
+    },
+    {
+        "name": "علي بابا",
+        "_id": 13 ,
+        "img" : "/images/res/aliBaba.jpg"
+
+    },
+    {
+        "name": "شاورما جرير",
+        "_id": 14 ,
+        "img" : "/images/res/jareer.jpg"
+
+    },
+    {
+        "name": "تين وزيتون",
+        "_id": 15 ,
+        "img" : "/images/res/teenWzetoon.png"
+
+    },
+    {
+        "name": "فلسطين",
+        "_id": 16 ,
+        "img" : "/images/res/palestine.jpg"
+
+    },
+    {
+        "name": "الجبعي",
+        "_id": 17 ,
+        "img" : "/images/res/jaba3i.jpg"
+
+    },
+    {
+        "name": "شاورما زيدان",
+        "_id": 18 ,
+        "img" : "/images/res/zedan.jpg"
+
+    }
+]

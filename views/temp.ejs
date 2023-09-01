@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+
+<% arrUsers.forEach(element => { %>    
+<div class="card" style="width: 18rem;">
+    <div class="card-body"> 
+      <h5 class="card-title"><%= element.firstName %></h5>
+      <p class="card-text"> <%= element.lastName%></p>
+      <a href="<%= element._id  %>" class="card-link"><%= element.email %></a>
+      <br><br>
+      <a href="#" class="card-link"><%= element.password  %></a>
+      <button data-id="<%= element._id %>" class ="deleteBut">DELETE</button>
+    </div>
+  </div>
+ <% });  %>
+
+
+
+<%- include('partials/footer') %>
+
+
+<script>
+    const but = document.querySelector('.deleteBut');
+    const id = but.getAttribute('data-id')
+    console.log("the button is" + but );
+    console.log("the id is " + id );
+    but.addEventListener('click' , (eo) => {
+        fetch(`${id}` , {method : 'delete'})
+        .then((response)=> response.json())
+        .then((data)=> window.location.href =  data.link)
+        .catch((err)=> {
+           console.log(err);
+        });
+    })
+</script>

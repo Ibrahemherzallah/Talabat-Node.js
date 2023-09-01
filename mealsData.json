@@ -1,0 +1,144 @@
+[
+    [
+            {
+                "id" : 1,
+                "name" : "فاميلي ميكس" ,
+                "price" : 100 ,
+                "pic" : "/images/coffie.jpg" 
+            },  
+            {
+                "id" : 1,
+                "name" : "الوجبة المميزة" ,
+                "price" : 80 , 
+                "pic" : "/images/coffie.jpg" 
+            },
+            {
+                "id" : 1,
+                "name" : "بيرسونال" ,
+                "price" : 100 ,
+                "pic" : "/images/coffie.jpg" 
+            },
+            {
+                "id" : 1,   
+                "name" : "ريزو" ,
+                "price" : 80 , 
+                "pic" : "/images/coffie.jpg" 
+            }
+        
+        
+            
+    ],
+    [
+        {
+            "id" : 2 ,
+            "name" : "بيبسي" ,
+            "price" : 100 ,
+            "pic" : "/images/coffie.jpg" 
+        },
+        {
+            "id" : 2 ,
+            "name" : "يبيبي" ,
+            "price" : 80 , 
+            "pic" : "/images/coffie.jpg" 
+        },
+        {
+            "id" : 2 ,
+            "name" : "يسبيسب" ,
+            "price" : 100 ,
+            "pic" : "/images/coffie.jpg" 
+        }
+            
+        
+    ],
+    [
+        {
+            "id" : 3 ,
+            "name" : "بيبسي" ,
+            "price" : 100 ,
+            "pic" : "/images/coffie.jpg" 
+        },
+        {
+            "id" : 3 ,
+            "name" : "يبيبي" ,
+            "price" : 80 , 
+            "pic" : "/images/coffie.jpg" 
+        },
+        {
+            "id" : 3 ,
+            "name" : "يسبيسب" ,
+            "price" : 100 ,
+            "pic" : "/images/coffie.jpg" 
+        }
+            
+        
+    ],
+    [
+        {
+            "id" : 4 ,
+            "name" : "بيبسي" ,
+            "price" : 100 ,
+            "pic" : "/images/coffie.jpg" 
+        },
+        {
+            "id" : 4 ,
+            "name" : "يبيبي" ,
+            "price" : 80 , 
+            "pic" : "/images/coffie.jpg" 
+        },
+        {
+            "id" : 4 ,
+            "name" : "يسبيسب" ,
+            "price" : 100 ,
+            "pic" : "/images/coffie.jpg" 
+        }
+            
+        
+    ],
+    [
+        {
+            "id" : 5 ,
+            "name" : "بيبسي" ,
+            "price" : 100 ,
+            "pic" : "/images/coffie.jpg" 
+        },
+        {
+            "id" : 5 ,
+            "name" : "يبيبي" ,
+            "price" : 80 , 
+            "pic" : "/images/coffie.jpg" 
+        },
+        {
+            "id" : 5 ,
+            "name" : "يسبيسب" ,
+            "price" : 100 ,
+            "pic" : "/images/coffie.jpg" 
+        }
+            
+        
+    ],
+    [
+        {
+            "id" : 6 ,
+            "name" : "بيبسي" ,
+            "price" : 100 ,
+            "pic" : "/images/coffie.jpg" 
+        },
+        {
+            "id" : 6 ,
+            "name" : "يبيبي" ,
+            "price" : 80 , 
+            "pic" : "/images/coffie.jpg" 
+        },
+        {
+            "id" : 6 ,
+            "name" : "يسبيسب" ,
+            "price" : 100 ,
+            "pic" : "/images/coffie.jpg" 
+        }
+            
+        
+    ]
+ 
+] 
+
+

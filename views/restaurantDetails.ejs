@@ -1,0 +1,45 @@
+<%- include('partials/header') %>
+
+    <div class="allResPages">
+        <!-- <img src="/images/resBackground/tazajRes.png" alt="cc" class="imgg"> -->
+        <div class="container col-6 tabsContainer">
+            <nav>
+                <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">قائمة الطعام</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">ساعات العمل</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">التقييم</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active foodList" id="nav-home" role="tabpanel"
+                    aria-labelledby="nav-home-tab">
+                    <% restaurant.forEach(element => { %>
+                        <div class="firstMeal d-flex">
+                            <div class="firstLift col-2">
+                                <i>انقر للتفاصيل</i>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                  </svg>
+                            </div>
+                            <div class="firstMid col-8">
+                                <h4><%= element.name %></h4>
+                                <p><%= element.price %></p>
+                            </div>
+                            <div class="firstRight col-2">
+                                <img src="<%= element.pic %>" class="firstMealImg" alt="img">
+                            </div>
+                        </div>
+                        <hr class="ResHr">
+                    <% }); %>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Content
+                    for Profile tab goes here.</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Content
+                    for Contact tab goes here.</div>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer') %>

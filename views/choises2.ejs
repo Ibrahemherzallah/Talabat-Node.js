@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+<div class="choises2Page">
+    <!-- d -->
+<h1 class="textChoisesPage"><%= profData.firstName %> ايش حابب تطلب ؟!</h1>
+    <div class="cards-div">
+        <%for(let j=0 ; j<3 ; j++) { %>
+        <div class="card">
+            <img src="<%= choisesImg[j]  %>"> 
+            <div class="card-body">
+                <h5 class="card-title"><h2><%= choisesName[j] %></h2></h5>
+                <br>
+                <br>
+                <a href="<%= choisesName[j]  %>" class="btn btn-primary ">See more</a>
+            </div>
+        </div>
+        <% }%>  
+    </div>
+</div>
+<%- include('partials/footer') %>

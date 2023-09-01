@@ -1,0 +1,67 @@
+<%- include('partials/header') %>
+<div class="profilePage">
+  <div class="container profilePageContainer">
+    <nav class="navbar navbar-expand-lg dd">
+        <div class="container-fluid dd">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle profilePageIcon" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+              <h5 class="profilePageText"><%= profData.firstName + profData.lastName %></h1>
+            </ul>
+            <div class="navRight">
+              <button type="button" class="btn btn-outline-success" id="scrollToBottomButton" class="allResbut">
+                <img src="/images/delivery-icon.png" alt="delivery icon" class="deliveryIcon">
+                 كل الكوفي شوب
+            </button>
+            </div>
+          </div>
+        </div>
+      </nav> 
+      <div class="middleContent d-flex">  
+        <div>
+          <video class="myVideo" autoplay loop muted>
+            <source src="/videos/my-video2.mp4" type="video/mp4">
+            <source src="/videos/my-video2.mp4" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="textAndSearchDiv">
+          <h1 class="theMainTextInProfilePage">مرحبا <%= profData.firstName %>اطلب طعامك اونلاين الان وسيتم التوصيل في كافة انحاء مدينة جنين <span class="emojiSpan">&#x1F604;</span></h1>
+          <br>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2 searchInput" type="search" placeholder=" ابحث عن مطاعم في جنين" aria-label="Search">
+          </form>
+        </div>
+      </div>
+      <% for(let i=0 ; i<arrCoffie.length; i++) { 
+        if(i == 0 || i % 3 == 0 ) { %>
+        <div class="cards-div">
+          <%for(let j=0 ; j<3 ; j++) { %>
+            <div class="card">
+              <img src="<%= arrImg[i+j]%>"> 
+                <div class="card-body">
+                  <h5 class="card-title"><b>Name :</b><%= arrCoffie[i+j] %></h5>
+                  <a href="https://pokeapi.co/api/v2/pokemon/" class="btn btn-primary">More information</a>
+                </div>
+            </div>
+          <% }%>  
+        </div>
+      <%} } %>
+  </div>
+</div>
+<script>
+  const scrollToBottomButton = document.getElementById('scrollToBottomButton');
+  
+  scrollToBottomButton.addEventListener('click', () => {
+    // Scroll to the bottom of the page
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth' // Use 'auto' for instant scroll
+    });
+  });
+</script>
+<%- include('partials/footer') %>
