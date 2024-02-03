@@ -30,7 +30,7 @@
                         </svg>
                     </span>
                     <input type="text" class="form-control" placeholder="FirstName" aria-label="Username"
-                        aria-describedby="addon-wrapping" name="firstName">
+                        aria-describedby="addon-wrapping" name="firstName" required>
                 </div>
                 <div class="input-group flex-nowrap signUpInputs">
                     <span class="input-group-text" id="addon-wrapping">
@@ -39,7 +39,7 @@
                         </svg>
                     </span>
                     <input type="text" class="form-control" placeholder="LastName" aria-label="Username"
-                        aria-describedby="addon-wrapping" name="lastName">
+                        aria-describedby="addon-wrapping" name="lastName" required>
                 </div>
                 <div class="input-group flex-nowrap signUpInputs">
                     <span class="input-group-text" id="addon-wrapping">
@@ -48,7 +48,7 @@
                         </svg>
                     </span>
                     <input type="email" class="form-control" placeholder="Email" aria-label="Username"
-                        aria-describedby="addon-wrapping" name="email">
+                        aria-describedby="addon-wrapping" name="email" required>
                 </div>
                 <div class="input-group flex-nowrap signUpInputs">
                     <span class="input-group-text" id="addon-wrapping">
@@ -58,13 +58,10 @@
                         </svg>
                     </span>
                     <input type="password" class="form-control" placeholder="Password" aria-label="Username"
-                        aria-describedby="addon-wrapping" name="password">
+                        aria-describedby="addon-wrapping" name="password" required>
                 </div>
                 <button type="submit" class="signUpBut">Submit</button>
             </form>   
         </div>  
     </div>
-
-
-
     <%- include('../partials/footer') %>

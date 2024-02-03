@@ -1,7 +1,8 @@
 const path = require("path");
 const express = require('express');
-const app = express();
 const mongoose = require('mongoose');
+const session = require('express-session');
+const app = express();
 const authRoutes = require('./routes/authRoutes');
 const homeRoutes = require('./routes/homeRoutes');
 const choisesRoutes = require('./routes/choisesRoutes');
@@ -11,6 +12,20 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.urlencoded({ extended: true }));
+
+
+
+
+app.use(session({
+    secret: 'your-secret-key', // Replace with a secure secret key
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false }, // Set to true if using HTTPS
+  }));
+
+
+
+
 
 app.use( '/' , homeRoutes);
 app.use( '/' , authRoutes);
